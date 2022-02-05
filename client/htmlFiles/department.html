@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="../jsFiles/departmentScript.js"></script>
+    <script src="../jsFiles/deleteDepartment.js"></script>
+    <script src="../jsFiles/checkActions.js"></script>
+    <script src="../jsFiles/checkIdUser.js"></script>
+    <link rel="stylesheet" href="../cssFiles/employee.css" />
+    
+</head>
+<body onload="getEmployeeFromServer()">
+
+<div >
+    <nav class="navbar navbar-dark bg-dark justify-content-between">
+        <span class="navbar-brand" id="nav">Navbar</span>
+        <form class="form-inline">
+          
+          <button  type="button" class="btn btn-danger my-2 my-sm-0" onclick="window.location.href = 'login.html'">LogOut</button>
+        </form>
+            
+      </nav>
+    </div>  
+<div>
+
+<div class="container">
+
+</br>
+    <button type="button" class="btn btn-dark text-center" onclick="window.location.href = 'addDepartment.html'">Add department</button>
+    <button class="btn btn-dark text-center" onclick="window.location.href='homePage.html'">Back</button>
+    <br/> <br/>
+  
+    <table class="table table-striped table-dark  table-bordered">
+        <thead>
+          <tr>           
+            <th scope="col">Name</th>
+            <th scope="col">Manager</th>
+
+          </tr>
+        </thead>
+        <tbody id="tBody">
+         
+        </tbody>
+      </table>
+
+</div>
+
+<nav class="navbar fixed-bottom  navbar-dark bg-dark">
+  <div class="container-fluid justify-content-center">
+    <span class="navbar-brand">© 2022 Matan Neyman.  All rights reserved.</span>
+  </div>
+</nav>
+  
+</body>
+</html>

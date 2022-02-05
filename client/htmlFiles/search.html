@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../cssFiles/employee.css" />
+        <script src="../jsFiles/buildAfterSearch.js"></script>
+        <script src="../jsFiles/search.js"></script>
+        <script src="../jsFiles/checkIdUser.js"></script>
+</head>
+<body>
+    <body onload="getDataFromServer(), getStorage()">
+    
+        <div>
+          <nav class="navbar navbar-dark bg-dark justify-content-between">
+              <span class="navbar-brand" id="nav">Navbar</span>
+              <form class="form-inline">
+                
+                <button  type="button" class="btn btn-danger my-2 my-sm-0" onclick="window.location.href = 'login.html'">LogOut</button>
+              </form>
+              
+            </nav>
+          </div>  
+      <div>
+      <div>
+      <br>
+      <div class="container">
+          
+          <button class="btn btn-dark text-center" onclick="window.location.href='employee.html'">Back</button>
+      
+          <br/> <br/>
+      
+          <table class="table table-striped table-dark  table-bordered">
+              <thead>
+                <tr>           
+                  <th scope="col">First Name</th>
+                  <th scope="col">Last Name</th>
+                  <th scope="col">Start Work</th>
+                  <th scope="col">Dep</th>
+                  <th scope="col">Shifts</th>
+                  
+                </tr>
+              </thead>
+              <tbody id="tBody">
+               
+              </tbody>
+            </table>
+      
+      </div>
+</body>
+</html>

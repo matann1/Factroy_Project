@@ -1,0 +1,84 @@
+body {
+  background-image: url("homepagePhoto.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.serviceBox {
+  color: #fff;
+  background: linear-gradient(to right, #ff4b2b, #ff4b2b);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 15px 25px;
+  border-radius: 75px;
+  box-shadow: 0 0 20px -7px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+}
+.serviceBox:before {
+  content: "";
+  background: linear-gradient(to right, #f9f9f9, #e1e1e1);
+  width: 100%;
+  height: 130px;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.serviceBox .service-icon {
+  color: #ff4b2b;
+  background: #fff;
+  font-size: 70px;
+  line-height: 100px;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 35px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1;
+}
+.serviceBox .title {
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+.serviceBox .description {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 25px;
+  line-height: 30px;
+}
+.serviceBox.purple {
+  background: linear-gradient(to right, #ba2f8d, #d4529c);
+}
+.serviceBox.purple .service-icon {
+  color: #ba2f8d;
+}
+.serviceBox.blue {
+  background: linear-gradient(to right, #20978e, #43b2a4);
+}
+.serviceBox.blue .service-icon {
+  color: #20978e;
+}
+.serviceBox.green {
+  background: linear-gradient(to right, #82c147, #aecc0a);
+}
+.serviceBox.green .service-icon {
+  color: #82c147;
+}
+@media only screen and (max-width: 990px) {
+  .serviceBox {
+    margin: 0 0 30px;
+  }
+}
+
+.navbar-brand {
+  font-size: medium;
+}
