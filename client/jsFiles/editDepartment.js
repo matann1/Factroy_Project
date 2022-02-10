@@ -20,9 +20,7 @@ async function getDepartmentFromServer()
 
     let resp = await fetch("https://localhost:44341/api/department/"+idDep);
     let department = await resp.json();
-//debugger;
-    
-    //dep=departments.find(x=>x.Manager==id);
+
     document.getElementById("name").value=department.Name;
     document.getElementById("manager").value=department.Manager;
 
@@ -31,7 +29,7 @@ async function getDepartmentFromServer()
 
 async function save()
 {
-   // debugger;
+
    // take from sessionStorage, check user and check actions
    let idDep=await checkIdUser();
      
@@ -41,7 +39,6 @@ async function save()
 
        let ress = await fetch("https://localhost:44341/api/department/"+idDep);
        let department = await ress.json();
-       // department.find(department.ID==)
 
         let fetchParams = {method : 'PUT',
         body : JSON.stringify(obj),

@@ -25,9 +25,7 @@ async function getDepartmentFromServer()
 
     let respDep = await fetch("https://localhost:44341/api/department");
     let departments = await respDep.json();
-//debugger;
     
-    //dep=departments.find(x=>x.Manager==id);
     document.getElementById("fname").value=employee.First_Name;
     document.getElementById("lname").value=employee.Last_Name;
     document.getElementById("sws").value=employee.Start_Work_Year;
@@ -40,15 +38,10 @@ async function getDepartmentFromServer()
         select.appendChild(option);
         document.getElementById("select").appendChild(option);
     });
-
-    //document.getElementById("depid").value=employee.DepartmentID;
-    
-
 }
 
 async function save()
 {
-   // debugger;
    let idDep=await checkIdUser();
     
     let obj = {First_Name : document.getElementById("fname").value,

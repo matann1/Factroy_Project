@@ -8,7 +8,6 @@ async function loginFunc(){
     let resp = await fetch("https://localhost:44341/api/user");
     let users = await resp.json();
 
-//debugger;
     users.forEach(temp => {
         var userName= temp.User_Name;
         var noSpacesString= userName.replace(/ /g,'');

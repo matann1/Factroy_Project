@@ -13,10 +13,8 @@ async function deleteEmployee(idEmp)
             //body : JSON.stringify(obj),
             headers : {"Content-Type" : "application/json"}
         }
-       // debugger;
         let re = await fetch("https://localhost:44341/api/EmployeeShift/"+idEmp, fetchParams);
-    }
-//debugger;   
+    }  
     });
 
     let fetchParams = {method : 'DELETE',

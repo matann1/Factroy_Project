@@ -8,15 +8,9 @@ async function getUser()
     let x=sessionStorage["id"];
     let id =  JSON.parse(x);
 
-    // let resp = await fetch("https://localhost:44341/api/employee/"+idEmp);
-    // let employeeShift = await resp.json();
 
     let respShi = await fetch("https://localhost:44341/api/shift");
     let shifts = await respShi.json();
-//debugger;
-    
-
-    //document.getElementById("select").value=employeeShift.ShiftID;
 
     //created drop down list of shifts
     shifts.forEach(shift => {
@@ -33,7 +27,7 @@ async function getUser()
 async function save()
 {
     let flag=true;
-   // debugger;
+
     let id=sessionStorage["id"];
     let res = await fetch("https://localhost:44341/api/user/"+ id);
     let user = await res.json();
